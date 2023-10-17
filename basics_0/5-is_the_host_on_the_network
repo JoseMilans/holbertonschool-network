@@ -3,7 +3,7 @@
 # and send 5 pings (ICMP packets) to this IP address to test the connection.
 
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $(basename $0) {IP_ADDRESS}"
+    echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
     exit 1
 fi
 ping -c 5 "$1"
