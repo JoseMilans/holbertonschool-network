@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# A script to check the network connectivity to a given IP address,
+# and send 5 pings (ICMP packets) to this IP address to test the connection.
+
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $(basename $0) {IP_ADDRESS}"
+    exit 1
+fi
+ping -c 5 "$1"
